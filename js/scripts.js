@@ -1,7 +1,7 @@
-var cc = "0"
-var jj = "0"
-var pp = "0"
-var rr = "0"
+var cc = 0
+var jj = 0
+var pp = 0
+var rr = 0
 
 
 $(document).ready(function(){
@@ -97,9 +97,16 @@ $(document).ready(function(){
    $(".question5").hide();
    $(".resultText").show();
    $(".EndNote").show();
-
 // BIG ol if statement deciding what result to show
-
+  if ( cc > jj && cc > pp && cc > rr ){
+  $(".resultC").show();
+}else if ( jj > cc && jj > pp && jj > rr ){
+  $(".resultJava").show();
+}else if ( pp > jj && pp > cc && pp > rr ){
+  $(".resultPhp").show();
+}else if ( rr > jj && rr > pp && rr > cc ){
+  $(".resultRuby").show();
+  }
       $(".next5").hide();
       $(".REstart").show();
  });
