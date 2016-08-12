@@ -15,26 +15,26 @@
     <div class="container">
 
       <div class="page-header">
-        <h1>take this quick test to find out what you should study</h1>
+        <h1>Take this quick test to find out what you should study!</h1>
       </div>
 
       <div class="jumbotron">
-        <h3>its a programming personality quiz</h3>
-        <button type="button" class="start">lets get started</button>
+        <h3>This is a programming personality quiz!</h3>
+        <button type="button" class="start">lets get started:</button>
       </div>
 
       <div class="questions">
 
         <div class="question1">
-        <label for="BuisnessSize">what size of company would you prefer to work for?</label>
-        <select class="form-control">
-          <option>A bigger established businesses like Microsoft</option>
+        <label for="BuisnessSize">What size of company would you prefer to work for?</label>
+        <select id=Q1 class="form-control">
+          <option value="C J">A bigger established businesses like Microsoft</option>
                   <!-- C# (or java) -->
-          <option>An enterprise company. Usually privately owned and provide goods and services.</option>
+          <option value="J C">An enterprise company. Usually privately owned and provide goods and services</option>
                 <!-- java (or C#) -->
-          <option>Startups and smaller companies</option>
+          <option value="R">Startups and smaller companies</option>
                 <!-- Ruby -->
-          <option>Small or large, are you undecided?</option>
+          <option value="P">Small or large. Are you undecided?</option>
                 <!-- php -->
         </select>
         <button type="button" class="next1">Next Question</button>
@@ -43,39 +43,39 @@
 
       <div class="question2">
       <label for="demand">Would you like to learn an in-demand language or be more specalised?</label>
-        <select class="form-control">
-          <option>one of the most in-demand languages in the job market</option>
+        <select id=Q2 class="form-control">
+          <option value="C J">one of the most in-demand languages in the job market</option>
                   <!-- c# or java -->
-          <option>one of the more popular programming languages amoung buisnesses</option>
+          <option value="J C">one of the more popular programming languages amoung buisnesses</option>
                   <!-- c# or java -->
-          <option>one of the more popular programming languages amoung both new and more experienced programmers</option>
+          <option value="P R">one of the more popular programming languages amoung both new and more experienced programmers</option>
            <!-- php or ruby -->
-          <option>general purpose programming language</option>
+          <option value="R P">general purpose programming language</option>
           <!-- php or ruby -->
-          <option>Either. Still undecided</option>
+          <option value="0">Either. Still undecided</option>
         </select>
         <button type="button" class="next2">Next Question</button>
 
         </div>
 
         <div class="question3">
-        <label for="YourProjects">what sort of projects would you prefer to work on?</label>
-          <select class="form-control">
-            <option>building internal software</option>
+        <label for="YourProjects">What sort of projects would you prefer to work on?</label>
+          <select id=Q3 class="form-control">
+            <option value="C">building internal software</option>
             <!-- C# -->
-            <option>high-performance processing</option>
+            <option value="J">high-performance processing</option>
             <!-- java -->
-            <option>creating user interfaces</option>
+            <option value="J">creating user interfaces</option>
              <!-- java -->
-            <option>content-heavy websites with relatively little user interaction</option>
+            <option value="P">content-heavy websites with relatively little user interaction</option>
             <!-- php -->
-            <option>building websites for clients</option>
+            <option value="J P">building websites for clients</option>
             <!--java or php -->
-            <option>building out sites for brands, businesses, and organizations</option>
+            <option value="P">building out sites for brands, businesses, and organizations</option>
             <!-- php -->
-            <option>building interactive web applications</option>
+            <option value="R">building interactive web applications</option>
             <!-- ruby -->
-            <option>undecided</option>
+            <option value="0">undecided</option>
           </select>
           <button type="button" class="next3">Next Question</button>
 
@@ -83,36 +83,52 @@
 
           <div class="question4">
           <label for="LearnMore">Do you have any languages you know would like to learn more about?</label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox1" value="option1"> C#
+          <!-- <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="C"> C#
           </label>
           <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox2" value="option2"> Java
+            <input type="checkbox" id="inlineCheckbox2" value="J"> Java
           </label>
           <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox3" value="option3"> PHP
+            <input type="checkbox" id="inlineCheckbox3" value="P"> PHP
           </label>
           <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox4" value="option4"> Ruby
+            <input type="checkbox" id="inlineCheckbox4" value="R"> Ruby
           </label>
+          <p></p> -->
+          <select id=Q4 class="form-control">
+            <option value="C">C#</option>
+            <option value="J">Java</option>
+            <option value="P">PHP</option>
+            <option value="R">Ruby</option>
+            <option value="0">No</option>
+          </select>
           <button type="button" class="next4">Next Question</button>
 
           </div>
 
           <div class="question5">
           <label for="LearnLess">Do you have any languages you know would NOT like to learn more about?</label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox5" value="option1"> C#
+          <!-- <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox5" value="C"> C#
           </label>
           <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox6" value="option2"> Java
+            <input type="checkbox" id="inlineCheckbox6" value="J"> Java
           </label>
           <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox7" value="option3"> PHP
+            <input type="checkbox" id="inlineCheckbox7" value="P"> PHP
           </label>
           <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox8" value="option4"> Ruby
+            <input type="checkbox" id="inlineCheckbox8" value="R"> Ruby
           </label>
+          <p></p> -->
+          <select id=Q5 class="form-control">
+            <option value="C">C#</option>
+            <option value="J">Java</option>
+            <option value="P">PHP</option>
+            <option value="R">Ruby</option>
+            <option value="0">No</option>
+          </select>
           <button type="button" class="next5">Almost Done!</button>
 
           </div>
@@ -120,23 +136,20 @@
       </div>
 
       <div class="Results">
-        <p class="resultText">you should probably study</p>
+        <p class="resultText">You should probably study:</p>
         <p class="resultC">C#</p>
         <p class="resultJava">Java</p>
         <p class="resultPhp">PHP</p>
         <p class="resultRuby">Ruby</p>
 
         <p class="EndNote">Many languages can overlap.
-          for example some buisnesses use PHP for their marketing site,
+          For example some buisnesses use PHP for their marketing site,
           Ruby for their web application, and Java for their back-end processing.
           If you would like to learn more check out this <a href="http://www.epicodus.com/blog/what-programming-language-should-i-learn">link</a>.
         </p>
         <button type="button" class="REstart"><a href="file:///C:/Users/epicodus/Desktop/JavaScriptjQueryProject/index.html">lets do that again!</a></button>
 
       </div>
-
-
-
 
     </div>
   </body>

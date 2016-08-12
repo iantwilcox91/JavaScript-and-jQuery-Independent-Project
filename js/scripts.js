@@ -35,6 +35,9 @@ $(document).ready(function(){
  $(".next5").click(function(){
    $(".question5").hide();
    $(".resultText").show();
+   $(".EndNote").show();
+
+// BIG ol if statement deciding what result to show
 
       $(".next5").hide();
       $(".REstart").show();
