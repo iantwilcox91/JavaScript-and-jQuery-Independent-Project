@@ -2,14 +2,23 @@ var cc = 0
 var jj = 0
 var pp = 0
 var rr = 0
-
+var name = "Name"
 
 $(document).ready(function(){
   $(".start").click(function(){
-    $(".question1").show();
+    $("#questionyourname").show();
     $(".start").hide();
+    $(".nextName").show();
+  });
+
+  $(".nextName").click(function(){
+    $(".resultName").text(name);
+    $("#questionyourname").hide();
+    $(".question1").show();
+    $(".nextName").hide();
     $(".next1").show();
   });
+
 
   $(".next1").click(function(){
     if ($("#Q1").val() === "C"){
@@ -91,6 +100,7 @@ $(document).ready(function(){
     }else{
     }
     $(".question5").hide();
+    $(".resultName").show();
     $(".resultText").show();
     $(".EndNote").show();
     if ( cc > jj && cc > pp && cc > rr ){
