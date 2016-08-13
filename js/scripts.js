@@ -13,11 +13,6 @@ $(document).ready(function(){
 
   $(".nextName").click(function(){
     person1Input = $("input#person1").val();
-
-
-
-
-
     $("#questionyourname").hide();
     $(".question1").show();
     $(".nextName").hide();
