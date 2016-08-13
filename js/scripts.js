@@ -2,7 +2,7 @@ var cc = 0
 var jj = 0
 var pp = 0
 var rr = 0
-var name = "Name"
+var person1Input = "Name"
 
 $(document).ready(function(){
   $(".start").click(function(){
@@ -12,7 +12,12 @@ $(document).ready(function(){
   });
 
   $(".nextName").click(function(){
-    $(".resultName").text(name);
+    person1Input = $("input#person1").val();
+
+
+
+
+
     $("#questionyourname").hide();
     $(".question1").show();
     $(".nextName").hide();
@@ -100,7 +105,7 @@ $(document).ready(function(){
     }else{
     }
     $(".question5").hide();
-    $(".resultName").show();
+    $(".person1").text(person1Input)
     $(".resultText").show();
     $(".EndNote").show();
     if ( cc > jj && cc > pp && cc > rr ){
