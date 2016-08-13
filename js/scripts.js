@@ -2,7 +2,7 @@ var cc = 0
 var jj = 0
 var pp = 0
 var rr = 0
-var person1Input = "Name"
+
 
 $(document).ready(function(){
   $(".start").click(function(){
