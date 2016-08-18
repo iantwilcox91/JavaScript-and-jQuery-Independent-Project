@@ -11,7 +11,8 @@ $(document).ready(function(){
     $(".nextName").show();
   });
 
-  $(".nextName").click(function(){
+  $("#questionyourname").submit(function(event){
+    event.preventDefault();
     person1Input = $("input#person1").val();
     $("#questionyourname").hide();
     $(".question1").show();
