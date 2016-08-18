@@ -104,17 +104,36 @@ $(document).ready(function(){
     $(".person1").text(person1Input)
     $(".resultText").show();
     $(".EndNote").show();
-    if ( Ccount > Javacount && Ccount > Phpcount && Ccount > Rubycount ){
-    $(".resultC").show();
-  }else if ( Javacount > Ccount && Javacount > Phpcount && Javacount > Rubycount ){
-    $(".resultJava").show();
-  }else if ( Phpcount > Javacount && Phpcount > Ccount && Phpcount > Rubycount ){
-    $(".resultPhp").show();
-  }else if ( Rubycount > Javacount && Rubycount > Phpcount && Rubycount > Ccount ){
-    $(".resultRuby").show();
-    }
     $(".next5").hide();
     $(".REstart").show();
+    if ( Ccount === Javacount && Ccount > Phpcount && Ccount > Rubycount ){
+      $(".resultC").show();
+      $(".resultJava").show();
+    } else if ( Ccount === Phpcount && Ccount > Javacount && Ccount > Rubycount ){
+      $(".resultC").show();
+      $(".resultPhp").show();
+    } else if ( Ccount === Rubycount && Ccount > Javacount && Ccount > Phpcount){
+      $(".resultC").show();
+      $(".resultRuby").show();
+    } else if ( Javacount === Phpcount && Javacount > Ccount && Javacount > Rubycount ){
+      $(".resultPhp").show();
+      $(".resultJava").show();
+    } else if ( Javacount === Rubycount && Javacount > Phpcount && Javacount > Ccount ){
+      $(".resultRuby").show();
+      $(".resultJava").show();
+    } else if ( Phpcount === Rubycount && Phpcount > Ccount && Phpcount > Javacount ){
+      $(".resultPhp").show();
+      $(".resultRuby").show();
+    } else if ( Ccount > Javacount && Ccount > Phpcount && Ccount > Rubycount ){
+      $(".resultC").show();
+    } else if ( Javacount > Ccount && Javacount > Phpcount && Javacount > Rubycount ){
+      $(".resultJava").show();
+    } else if ( Phpcount > Javacount && Phpcount > Ccount && Phpcount > Rubycount ){
+      $(".resultPhp").show();
+    } else if ( Rubycount > Javacount && Rubycount > Phpcount && Rubycount > Ccount ){
+      $(".resultRuby").show();
+    } else {
+      $(".resultC").show();
+    }
   });
-
 });
