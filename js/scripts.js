@@ -1,7 +1,7 @@
-var cc = 0
-var jj = 0
-var pp = 0
-var rr = 0
+var Ccount = 0
+var Javacount = 0
+var Phpcount = 0
+var Rubycount = 0
 
 
 $(document).ready(function(){
@@ -23,13 +23,13 @@ $(document).ready(function(){
 
   $(".next1").click(function(){
     if ($("#Q1").val() === "C"){
-    cc = cc + 1
+    Ccount = Ccount + 1
     }else if ($("#Q1").val() === "J"){
-    jj = jj + 1
+    Javacount = Javacount + 1
     }else if ($("#Q1").val() === "P"){
-    pp = pp + 1
+    Phpcount = Phpcount + 1
     }else if ($("#Q1").val() === "R"){
-    rr = rr + 1
+    Rubycount = Rubycount + 1
     }else{
     }
     $(".question1").hide();
@@ -40,13 +40,13 @@ $(document).ready(function(){
 
   $(".next2").click(function(){
     if ($("#Q2").val() === "C"){
-      cc = cc + 1
+      Ccount = Ccount + 1
     }else if ($("#Q2").val() === "J"){
-      jj = jj + 1
+      Javacount = Javacount + 1
     }else if ($("#Q2").val() === "P"){
-      pp = pp + 1
+      Phpcount = Phpcount + 1
     }else if ($("#Q2").val() === "R"){
-      rr = rr + 1
+      Rubycount = Rubycount + 1
     }else{
     }
     $(".question2").hide();
@@ -57,13 +57,13 @@ $(document).ready(function(){
 
   $(".next3").click(function(){
     if ($("#Q3").val() === "C"){
-      cc = cc + 1
+      Ccount = Ccount + 1
     }else if ($("#Q3").val() === "J"){
-      jj = jj + 1
+      Javacount = Javacount + 1
     }else if ($("#Q3").val() === "P"){
-      pp = pp + 1
+      Phpcount = Phpcount + 1
     }else if ($("#Q3").val() === "R"){
-      rr = rr + 1
+      Rubycount = Rubycount + 1
     }else{
     }
     $(".question3").hide();
@@ -74,13 +74,13 @@ $(document).ready(function(){
 
   $(".next4").click(function(){
     if ($("#Q4").val() === "C"){
-      cc = cc + 1
+      Ccount = Ccount + 1
     }else if ($("#Q4").val() === "J"){
-      jj = jj + 1
+      Javacount = Javacount + 1
     }else if ($("#Q4").val() === "P"){
-      pp = pp + 1
+      Phpcount = Phpcount + 1
     }else if ($("#Q4").val() === "R"){
-      rr = rr + 1
+      Rubycount = Rubycount + 1
     }else{
     }
     $(".question4").hide();
@@ -91,26 +91,26 @@ $(document).ready(function(){
 
   $(".next5").click(function(){
     if ($("#Q5").val() === "C"){
-    cc = cc - 1
+    Ccount = Ccount - 1
     }else if ($("#Q5").val() === "J"){
-    jj = jj - 1
+    Javacount = Javacount - 1
     }else if ($("#Q5").val() === "P"){
-    pp = pp - 1
+    Phpcount = Phpcount - 1
     }else if ($("#Q5").val() === "R"){
-    rr = rr - 1
+    Rubycount = Rubycount - 1
     }else{
     }
     $(".question5").hide();
     $(".person1").text(person1Input)
     $(".resultText").show();
     $(".EndNote").show();
-    if ( cc > jj && cc > pp && cc > rr ){
+    if ( Ccount > Javacount && Ccount > Phpcount && Ccount > Rubycount ){
     $(".resultC").show();
-    }else if ( jj > cc && jj > pp && jj > rr ){
+  }else if ( Javacount > Ccount && Javacount > Phpcount && Javacount > Rubycount ){
     $(".resultJava").show();
-    }else if ( pp > jj && pp > cc && pp > rr ){
+  }else if ( Phpcount > Javacount && Phpcount > Ccount && Phpcount > Rubycount ){
     $(".resultPhp").show();
-    }else if ( rr > jj && rr > pp && rr > cc ){
+  }else if ( Rubycount > Javacount && Rubycount > Phpcount && Rubycount > Ccount ){
     $(".resultRuby").show();
     }
     $(".next5").hide();
